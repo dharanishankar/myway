@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'lovelyFont';
+    src: 
+        url('cera-130.otf') 
+        format('opentype');
+}
+
+button{outline: none;}
+h2{font-family: 'Cormorant Garamond', serif;}
+.slogans{
+    position: absolute;
+    margin-top: 15%;
+    padding-left: 40px;
+    width: 50%;
+    color: #E8FF00;
+    opacity: 0.9;
+    font-size: 40px;
+    font-family: lovelyFont;
+}
+.slogans p{
+    color: white;
+}
+.grids p{
+    padding-top: 10px;
+    font-family: Verdana,Tahoma, sans-serif;
+    font-weight: bold;
+}
+.adminform{
+    display: none;
+    text-align: center;
+    background-color: rgba(36, 34, 34, 0.9);
+    max-width: 500px;
+    min-height: 200px;
+    border-radius: 30px;
+    box-shadow: 0 20px 20px rgba(70, 69, 69,0.4);
+    margin: auto;
+    margin-top:20vh;
+
+} 
+.adminform p{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.adminform form{
+    padding: 2rem 1rem ;
+}
+.adminform form input::placeholder{
+    color: white;
+    font-size: 14px;
+    font-weight: 5px;
+}
+.adminform form input{
+    margin-bottom: 2rem;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    color: white;
+    outline: none;
+} 
+.move{
+    position: fixed;
+    z-index: 1233;
+    text-align: center;
+    bottom: 20px;
+    right: 25px;
+    width: 55px;
+    box-sizing: border-box;
+    padding: 14px 9px 9px 7px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgba(70, 69, 69,0.4);
+}
+.move a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 auto;
+}
+#first{
+    background-image: url("./images/work.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.inner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+.heading{
+    display: flex;
+    justify-content: space-around;
+}
+.heading p{
+    
+    font-family: 'Pacifico', cursive;
+    font-size: 2.7rem;
+    color: turquoise;
+}
+.lists{
+    padding: 2rem;
+    float: right;
+    list-style-type: none;
+    animation: fades 1s ease-in-out;
+}
+@keyframes fades{
+    from{opacity: 0;}
+    to{opacity: 1;}
+} 
+.lists li {
+    padding: 2rem;
+    font-family: lovelyFont;
+    font-size: 1.5rem;
+}
+.lists li a{
+    text-decoration: none;
+    color:white;
+    letter-spacing: 3px;
+}
+.lists li:hover{
+    transform: translateX(-20px);
+    transition: 0.5s ease-in-out;
+}
+.cross{
+    display: none;
+}
+.close{
+    cursor: pointer;
+    color: cornsilk;
+}
+.sign{
+
+    position: absolute;
+      padding-top: 10px;   
+    z-index: 0;
+    align-items: center;
+}
+.sign button{
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 43px;
+    background: transparent;
+    border: 1px solid grey;
+    margin-left: 40px;
+    color: floralwhite;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;   
+}
+.logo{
+    margin-top: 30px;
+}
+#Philosophy, #Mission,#About .foundercnt,.company
+{
+    display: grid;
+}
+#Philosophy{
+    padding: 7rem  0;
+}
+.grids,#site,#features{
+    padding: 4rem 0;
+}
+#About{
+    padding:20px;
+    background-color:pink;
+}
+.philcont,.missi,.foundercnt .cnt{
+    padding: 3rem 2rem;
+    grid-row: 1;
+    grid-column: 1;
+}
+.phil,.missicont,.founder {
+    grid-row: 1;
+    grid-column: 2;
+}
+.company .companycnt{
+    grid-row: 2;
+    grid-column: 1;
+    padding: 7rem  0;
+}
+.phil img, .missi img,.founder img{
+    width: 100%;
+}
+.philcont h2,.missicont h2,h2{
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+.philcont div ,.missicont div,.cnt,.companycnt{
+    line-height: 45px;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+.cnt div{
+    padding: 2rem;
+    border:5px double black;
+}
+hr{
+    margin: auto 5%;
+    width: 90%;
+}
+.heading div{
+    width: 170px; height: 40px; background-size: contain;
+}
+#Projects,#site{
+    text-align: center;
+}
+#features ,.grids{
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-columns: 50% 50%;
+    background-color: rgba(233, 161, 233, 0.3);
+}
+.grids,.prohead{
+    background-color: ivory;
+}
+.grids{
+    padding-top: 0;
+}
+#features  div,.grids div{
+min-width: 400px;
+max-width: 400px;
+padding-top: 1rem;
+margin: auto;
+}
+.illus{
+    min-height: 250px;
+    max-width: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 200px;   
+}
+.illust{
+    min-height: 250px;
+    max-width: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.words{
+    min-height: 100px;
+}
+.prohead{
+    padding: 2rem;
+}
+.quality,.proper,.design,.develop{
+    padding: 1.2rem;
+    background-color:rgba(70, 69, 69,0.1);
+    border-radius: 200px;
+}
+.quality,.one{
+    grid-row:1 ;
+    grid-column:1 ;
+}
+.proper,.two{
+    grid-row:1 ;
+    grid-column:2 ;
+}
+.design,.three{
+    grid-row:2 ;
+    grid-column:1 ;
+}
+.develop,.four{
+    grid-row: 2;
+    grid-column:2 ;
+}
+#quotation{
+    text-align: center;
+    padding: 3rem 0;
+}
+#quotation p{
+    font-size: 1.5rem;
+}
+.quo input{
+    width: 600px;
+    height: 30px;
+    margin: 10px;
+    padding-top: 1rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+.quo button,.adminforms button{
+    height: 40px;
+    max-width: 300px;
+    min-width: 250px;
+    background-color: rgb(35, 118, 226);
+    border:none;
+    border-radius: 20px;
+}
+.adminform h2{
+    color: cornsilk;
+}
+@media only screen and (max-width: 1033px) {
+    .philcont h2,.missicont h2{
+        text-align: center;
+    }
+    .philcont,.missicont{
+        padding: 3rem 2rem 2rem 2rem;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .phil,.missi,.founder{
+        box-sizing: border-box;
+        padding: 1rem;
+        grid-row: 1;
+        grid-column: 1;
+    }   
+    .company .companycnt,.foundercnt .cnt {
+        padding: 1rem 0;
+        grid-row: 4;
+        grid-column: 1;
+    }
+}
+@media only screen and (max-width: 978px) {
+    #features  div,.grids div{
+        min-width: 250px;
+        max-width: 250px;
+        margin: auto;
+        }
+}
+@media only screen and (max-width: 768px) {
+    .names{
+        /* display: none; */
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+    .slogans p{
+        padding-top: 20px;
+        font-size: 18px;
+        width: 280px;
+        
+    }
+    .slogans{
+        margin-top: 40%;
+    }
+    .site{
+        padding: auto 20px;
+    }
+    .heading{
+        display: flex;
+        padding: 0 1rem;
+        flex-direction: row-reverse;
+        justify-content: end;
+    }
+    .heading p{
+        font-size: 1.5rem;
+    }
+    .inner{
+        justify-content: center;
+    }
+    .cross{
+        display: inline-block;
+        padding: 0.8rem;
+        transform: rotate(45deg);
+    }
+    .lists{
+        width: 70%;
+        display: none;
+    }
+    .sign button{
+        width: 150px;
+        height: 35px;
+        background: transparent;
+        border: 1px solid cornsilk;
+        color: cornsilk;
+        margin-top:16px;
+        width: 120px;
+        font-size: 14px;
+    }
+    .logo{
+        margin-top: 0px;
+    }
+    #features,.grids{
+        grid-auto-columns: 100%;
+    }
+    .quality,.one{
+        grid-row:1 ;
+        grid-column:1 ;
+    }
+    .proper,.two{
+        grid-row:2 ;
+        grid-column:1 ;
+    }
+    .design,.three{
+        grid-row:3 ;
+        grid-column:1 ;
+    }
+    .develop,.four{
+        grid-row: 4;
+        grid-column:1 ;
+    }
+    .quo input{
+        width: 300px;
+        height: 30px;
+        margin: 10px;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    .adminform{
+    max-width: 300px;
+    }
+}
+@media only screen and (max-width: 498px) {
+    .phil,.missi,.founder{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .philcont,.missicont,.foundercnt .cnt{
+        padding: 1rem 1rem 2rem 1rem;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .philcont div,.missicont div,.cnt,.companycnt{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    #About{
+        padding: 0 5px;
+    }    
+}
+@media only screen and (max-width: 1440px) {
+.owl-carousel  img{
+    background-size: cover;
+}
+.owl-carousel img{
+    min-width: 335px; 
+    /* max-width: 335px;  */
+    max-height: 330px;
+    min-height: 330px;
+    /* background-size: contain; */
+}
